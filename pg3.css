@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=La+Belle+Aurore&family=Tangerine:wght@400;700&display=swap');
+*{
+    margin: 0; padding: 0;
+}
+a{
+    text-decoration: none;
+}
+@media screen and (max-width: 600px) {}
+    .cnt1{
+            height: 100vh;
+            width: 100vw;
+            border: 1px solid rgb(0, 0, 0);
+            background-color: black;
+    }
+    .a1{
+        margin-left: 20%;
+        margin-top: -20%;
+        filter: drop-shadow(10px  10px 50px rgba(23, 193, 11, 0.918)); 
+      }
+    .a2{
+        color: white;
+        text-align: center;
+        width: 79%;
+        margin-left: 10%;
+        margin-top: -10%;
+        font-family: "La Belle Aurore", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: large;
+        /* font-family: "Tangerine", serif;
+        font-weight: 400;
+        font-size: 1.9rem;
+        font-style: normal; */
+
+        
+    }
+    .a3{
+        height: 4rem;
+        width: 22rem;
+        /* border: 1px solid white; */
+    }
+    .a3 #b1{
+        height: 2.5rem;
+        width: 6rem;
+        margin-top: 3%;
+        margin-left: 15%;
+        border-radius: 0.5rem;
+        font-family:cursive;
+        font-weight: bolder;
+        background:linear-gradient(to right, rgb(7, 255, 7),yellow);
+
+    }
+   
+    .a3 #b2{
+        height: 2.5rem;
+        width: 6rem;
+        margin-left: 15%;
+        border-radius: 0.5rem;
+        font-family:cursive;
+        font-weight: bolder;
+        background:linear-gradient(to right, rgb(235, 130, 64),yellow);
+
+    }
+    /* Styling for the button */
+.a3 #b1 {
+    height: 2.5rem;
+    width: 6rem;
+    margin-top: 3%;
+    margin-left: 15%;
+    border-radius: 0.5rem;
+    font-family:sans-serif;
+    font-weight: bolder;
+    background: linear-gradient(to right, rgb(7, 255, 48), yellow);
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Add animation effect when the button is clicked */
+  .a3 #b1:active {
+    transform: scale(0.95); /* Shrink button when clicked */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow to simulate depth */
+  }
+  
+  /* Optional hover effect for additional interactivity */
+  .a3 #b1:hover {
+    background: linear-gradient(to right, yellow, rgb(1, 169, 12));
+  }
+  
+    /* Styling for the button */
+.a3 #b2 {
+    height: 2.5rem;
+    width: 6rem;
+    margin-top: 3%;
+    margin-left: 17%;
+    border-radius: 0.5rem;
+    font-family:sans-serif;
+        font-weight: bolder;
+    background: linear-gradient(to right, rgb(255, 81, 7), yellow);
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Add animation effect when the button is clicked */
+  .a3 #b2:active {
+    transform: scale(0.95); /* Shrink button when clicked */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow to simulate depth */
+  }
+  
+  /* Optional hover effect for additional interactivity */
+  .a3 #b2:hover {
+    background: linear-gradient(to right, rgb(255, 0, 0), rgb(254, 7, 7));
+  }
+  
+/* Basic styling for the star */
+.glittering-star {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    position: absolute;
+    animation: glitter 2s infinite;
+  }
+.glittering-star1 {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    position: absolute;
+    animation: glitterr 2s infinite;
+  }
+  
+  /* Glitter effect animation */
+  @keyframes glitter {
+    0%, 100% {
+      box-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow, 0 0 20px yellow, 0 0 30px yellow;
+      background-color: yellow; /* Color of the star */
+    }
+    25% {
+      box-shadow: 0 0 5px rgb(255, 0, 204), 0 0 10px rgb(255, 0, 204), 0 0 15px rgb(255, 5, 134), 0 0 20px rgb(255, 0, 140), 0 0 30px rgb(251, 2, 189);
+      background-color: rgb(255, 0, 204); /* Color of the star */
+    }
+    50% {
+      box-shadow: 0 0 5px lightgreen, 0 0 10px lightgreen, 0 0 15px lightgreen, 0 0 20px lightgreen, 0 0 30px lightgreen;
+      background-color: lightgreen; /* Color of the star */
+    }
+    75% {
+      box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 30px white;
+      background-color: white; /* Color of the star */
+    }
+  }
+  @keyframes glitterr {
+    0%, 100% {
+      box-shadow: 0 0 5px rgb(255, 0, 204), 0 0 10px rgb(255, 0, 204), 0 0 15px rgb(255, 5, 134), 0 0 20px rgb(255, 0, 140), 0 0 30px rgb(251, 2, 189);
+      background-color: rgb(255, 0, 204); /* Color of the star */
+    }
+    25% { box-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px blue, 0 0 30px blue;
+      background-color: blue; /* Color of the star */
+     
+    }
+    50% { box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 30px white;
+      background-color: white; /* Color of the star */
+     
+    }
+    75% {box-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow, 0 0 20px yellow, 0 0 30px yellow;
+      background-color: yellow; /* Color of the star */
+     
+    }
+  }
+
+  .dial{
+    height: 30%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    /* border: 1px solid white; */
+
+  }
+  .dial p{
+    color: rgba(173, 255, 9, 0.763);
+    font-family: "Iceland", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  #think{
+    margin-left: 0%;
+    margin-top: -8%;
+    
+  } 
+  #dialoge{
+    display: none;
+  }

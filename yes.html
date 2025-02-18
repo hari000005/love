@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./yes.css">
+</head>
+<body>
+    <!-- <div class="heartbeat-heart" onclick="hb()" id="hb"></div> -->
+    
+         <!-- Landing Page Section -->
+  <div class="landing-page" id="landing-page">
+    <div class="message-box">
+      <h1 style="color: rgb(102, 4, 141);">Will You Marry Me?</h1>
+      <p class="sub-text">This moment is special. I'm waiting for your 'Yes' to start our forever!</p>
+      <button onclick="letsplay()" class="yes-button" id="yes-btn">Yes!</button>
+    </div>
+  </div>
+
+  <!-- Acceptance Page (after clicking "Yes") -->
+  <div class="acceptance-page" id="acceptance-page">
+    <h2 style="width: 120%; margin-left: -09%; font-size: 1.35rem; text-decoration:underline; font-family:monospace; color: rgb(153, 9, 9);">Our Future Together💖</h2>
+    <p style="margin-top: 5%; font-family: cursive; margin-bottom: -5%; text-align:center;width: 105%; margin-left: -2%; color: rgb(255, 255, 255);">
+      I'm so happy you said 'Yes!' Let's plan our future, shall we?</p>
+
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefi1aA1huYdF_GCPr-3Hk9uMZnd7fHi8SijhcTtYKiaTiO_g/viewform?embedded=true" width="1" height="1" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+      <!-- https://docs.google.com/forms/d/e/1FAIpQLSefi1aA1huYdF_GCPr-3Hk9uMZnd7fHi8SijhcTtYKiaTiO_g/viewform?usp=header -->
+
+      <!-- https://docs.google.com/forms/d/e/1FAIpQLSefi1aA1huYdF_GCPr-3Hk9uMZnd7fHi8SijhcTtYKiaTiO_g/viewform?usp=pp_url&entry.1646273037=after+few+years&entry.1235751902=tom&entry.70521869=we+spend+time+together+at+besent+nagar+beach -->
+
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSefi1aA1huYdF_GCPr-3Hk9uMZnd7fHi8SijhcTtYKiaTiO_g/formResponse" method="POST" target="_self">
+      <label for="marriageDate" >Enter Your Name</label>
+      <input type="text" id="marriageDate" name="entry.1646273037" placeholder=" Your Name" required>
+
+      <label for="babyName" style="margin-top: 10%;">Enter your Partner Name</label>
+      <input type="text" id="babyName"  name="entry.1235751902" placeholder="Enter a name" required >
+
+      <label for="dateQuestion">Enter Your Mail Id</label>
+      <input type="email" id="dateQuestion" name="entry.70521869" placeholder="Email" required >
+
+      <input type="checkbox" name=""  id="" style="width: 10%;display: flex;">
+      <p style="font-family: monospace; font-size: x-small;position: relative; margin-top: -11%;margin-left: 8%; width: 95%;">I declare hereby your data are not to be shared .! <span style="text-decoration: underline;"> Terms & conditions Apply.</span></p>
+
+      <button type="submit" >Let's begin💎 </button>
+    </form>
+  </div>
+
+  <audio id="background-music" loop>
+    <source src="./y2mate.com - love status Intha Kaname unnai manappenesuryavaranam aayiram.mp3" type="audio/mp3">
+    <!-- Your browser does not support the audio element. -->
+  </audio>
+    
+  <script src="./yes.js"></script>
+    
+
+  <!-- <script> 
+  function letsplay(){
+    document.getElementById("background-music").play();
+  }
+    // Automatically play background music when the page loads
+// window.onload = () => {
+//   const music = document.getElementById("background-music");
+//   music.play();
+// };
+
+// Handle the "Yes" button click
+document.getElementById("yes-btn").addEventListener("click", () => {
+  // Hide the landing page and show the acceptance page
+  document.querySelector(".landing-page").style.display = "none";
+  document.getElementById("acceptance-page").style.display = "block";
+});
+
+  </script> -->
+</body>
+</html>

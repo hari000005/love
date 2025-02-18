@@ -1,0 +1,208 @@
+*{
+    margin: 0; padding: 0;
+}
+
+/* Center the heart in the page */
+/* body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #000000; 
+margin: 0;
+}
+
+
+.heartbeat-heart {
+width: 100px;
+height: 100px;
+margin-left:0%;
+margin-top: -60%;
+position: relative;
+animation: heartbeat 1s infinite; 
+transform-origin: center;
+}
+
+.heartbeat-heart::before,
+.heartbeat-heart::after {
+content: '';
+position: absolute;
+width: 90px;
+height: 150px;
+background-color: pink; 
+border-radius: 50px 50px 0 0;
+animation: glitter 1.5s infinite alternate; 
+}
+
+.heartbeat-heart::before {
+left: 0;
+transform: rotate(-45deg);
+transform-origin: 100% 80%;
+}
+
+.heartbeat-heart::after {
+right: 0;
+transform: rotate(45deg);
+transform-origin: 0 80%;
+}
+
+@keyframes glitter {
+0%, 100% {
+  box-shadow: 0 0 10px 3px rgba(255, 0, 127, 0.8), 0 0 20px 5px rgba(255, 105, 180, 0.5);
+  opacity: 0.8;
+}
+50% {
+  box-shadow: 0 0 20px 5px rgba(255, 0, 127, 1), 0 0 30px 8px rgba(255, 105, 180, 0.8);
+  opacity: 1;
+}
+}
+
+@keyframes heartbeat {
+0%, 100% {
+  transform: scale(1); 
+}
+50% {
+  transform: scale(1.2); 
+}
+} */
+
+  /***********************************/
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffb3c6, #ff6f91); /* Soft pink gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    
+  }
+  
+  /* Landing Page Styles */
+  .landing-page {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .message-box h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .sub-text {
+    font-size: 1.3rem;
+    margin-bottom: 40px; margin-left: 5%;
+    color: #fbfbfb;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 90%;
+    text-align: center;
+  
+  }
+  
+  .yes-button {
+    padding: 5px 15px;
+    font-size: 1.5rem;
+    background-color: #ff007f;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.4);
+    transition: all 0.3s ease-in-out;
+    animation: pulseButton 1s infinite ease-in-out;
+  }
+  
+  .yes-button:hover {
+    transform: scale(1.1);
+    background-color: #ff80ab;
+  }
+  
+  /* After 'Yes' Button Click Styles */
+  .acceptance-page {
+    display: none; 
+    text-align: center;
+    z-index: 10;
+    background-color: #ff6f91;
+    padding: 30px;
+    border-radius: 15px;
+    height: 70%;
+    width: 80%;
+    border: 2px solid rgb(231, 1, 47);
+    box-shadow: 2px 0.5px 10px black;
+    margin-top: -20%;
+  
+  }
+  
+  form {
+    margin-top: 30px;
+    /* border:1px solid; */
+  }
+  
+  form input {
+    padding: 12px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ff0000;
+    font-size: 1rem;
+    margin-bottom: 5%;
+  }
+  form label{
+    text-transform: capitalize;
+  }
+  
+  form button {
+    padding: 10px 10px;
+    font-size: 1.2rem;
+    background-color: #ff007f;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    height: 10%;
+    width: 70%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 0, 127, 0.4);
+    transition: all 0.3s ease-in-out;
+    margin-top: 10%;
+  }
+  
+  form button:hover {
+    transform: scale(1.1);
+    background-color: #ff80ab;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulseButton {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  

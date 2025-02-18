@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pg4.css">
+</head>
+<body>
+    <div class="cont1"  onclick="showNextSentence()" >
+        <div class="sub1">
+            <img id="boi" src="./broken_boy-removebg-preview.png" height="250px" alt="">
+
+        </div>
+
+        <div class="sub2">
+            <p id="sentence1" class="sentence">"I’m not a genie, but I can make your wishes come true... starting with 'Will you be mine?'"</p>
+            <p id="sentence2" class="sentence">"Is it OK if I follow you home? Because my parents always told me to follow my dreams."</p>
+            <p id="sentence3" class="sentence"> "You are so beautiful that you made me forget my pick-up line."</p>
+            <p id="sentence4" class="sentence">"Do you have a pencil? Because I want to erase your past and write our future."</p>
+            <p id="sentence5" class="sentence">Let’s flip a coin. Head, I’m yours. Tails, you’re mine.</p>
+            <p id="sentence6" class="sentence">"Are you an angel? Because heaven is missing one."</p>
+            <p id="sentence7" class="sentence">"Your presence is so mesmerizing, I can’t take my eyes off you."</p>
+            <p id="sentence8" class="sentence">"You must be tired because you’ve been running through my mind all day."</p>
+        </div>
+
+        <div class="sub3"  onclick="tap() " >
+            
+                <button id="yesButton"><a href="./yes.html" style="text-decoration: none; color: black;">Yes Darl</a></button>
+                <button id="noButton">No Dear</button>
+
+                <!-- <iframe width="260" height="115" src="https://www.youtube.com/embed/NU-OF06eRZ0?si=24jjjZHeOPtjwRwb"  allow="autoplay; " ></iframe> -->
+           
+        </div>
+
+        <div id="gifContainer" class="gif-container">
+            <img id="gif" src="https://media.tenor.com/kgx77HHSuFwAAAAm/tkthao219-bubududu.webp" alt="gif" />
+        </div>
+        <!-- <div class="sub4" id="gif">
+            <img id="peach" src="https://media.tenor.com/kgx77HHSuFwAAAAm/tkthao219-bubududu.webp" alt="">
+        </div> -->
+        <audio id="myAudio" src="./Thimiru_kaattaadha_di_song_status_RJ_BALAJI_STATUS_PRIYA_ANAND_STATUS.mp3" autoplay></audio>
+
+    </div>
+
+   
+        <script src="./pg4.js"></script>
+
+    <!-- <script>
+
+        // setTimeout(() => {
+
+        //     function hi() {
+                
+        // document.getElementById('myAudio').play()
+           
+        // }hi()
+            
+        // },100);
+
+        function tap() {
+            document.getElementById('myAudio').play()
+        }
+
+        //     window.onload = function() {
+        //     var audio = document.getElementById('myAudio');
+        //     audio.play();
+        // };
+
+        // Function to move the button randomly
+        function moveButtonRandomly() {
+            const button = document.getElementById('noButton');
+
+            // Get the viewport width and height
+            const viewportWidth = window.innerWidth;
+            const viewportHeight = window.innerHeight;
+
+            // Get the button's dimensions
+            const buttonWidth = button.offsetWidth;
+            const buttonHeight = button.offsetHeight;
+
+            // Generate random positions within the viewport, accounting for the button's size
+            const randomX = Math.floor(Math.random() * (viewportWidth - buttonWidth));
+            const randomY = Math.floor(Math.random() * (viewportHeight - buttonHeight));
+
+            // Set the new position of the button
+            button.style.left = `${randomX}px`;
+            button.style.top = `${randomY}px`;
+        }
+
+        // Add the touch or click event listener to the "No" button
+        document.getElementById('noButton').addEventListener('click', moveButtonRandomly);
+        document.getElementById('noButton').addEventListener('touchstart', moveButtonRandomly);
+
+        // *****************************
+
+            // Get elements
+const sentences = document.querySelectorAll('.sentence');  // All sentences
+const showNextBtn = document.getElementById('noButton'); // Button
+
+let currentSentence = 0; // Start with the first sentence
+
+// Function to show the next sentence
+function showNextSentence() {
+    if (currentSentence < sentences.length) {
+        // Hide the current sentence
+        if (currentSentence > 0) {
+            sentences[currentSentence - 1].style.display = 'none';
+        }
+
+        // Show the next sentence
+        sentences[currentSentence].style.display = 'block';
+        currentSentence++;
+    }
+
+    // Disable the button if all sentences are shown
+    if (currentSentence === sentences.length) {
+        showNextBtn.disabled = true;
+        showNextBtn.remove();
+    }
+}
+
+// Event listener for the button
+showNextBtn.addEventListener('click', showNextSentence);
+
+// ****************************************************
+
+// Get the elements
+const noButton = document.getElementById('noButton');
+const gifContainer = document.getElementById('gifContainer');
+const gif = document.getElementById('gif');
+
+// Event listener for the "No" button click
+noButton.addEventListener('click', () => {
+    // Toggle the visibility of the GIF
+    gifContainer.style.display = 'block';  // Show GIF
+});
+
+// Optional: If you want to hide the GIF again after a certain time (e.g., 5 seconds)
+function call(){
+setTimeout(() => {
+    gifContainer.style.display = 'none';  // Hide GIF after 5 seconds
+}, 2000);
+}
+
+
+    </script> -->
+</body>
+</html>
